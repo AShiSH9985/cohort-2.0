@@ -1,0 +1,31 @@
+@font-face {
+    font-family: face;
+    src: url(./RUSTY\ ATTACK\ DEMO\ Regular.otf);
+}
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    /* background-color: aqua */
+}
+html, body{
+    height:100%;
+    width: 100%;
+}
+
+div{
+    color: red;
+    background-color: black;
+    height: 20%;
+    width: 100%;
+    font-size: xx-large;
+}
+h1{
+    color:red;
+    font-family: face;
+
+}
