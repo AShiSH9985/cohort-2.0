@@ -1,0 +1,23 @@
+@font-face {
+    font-family: new ;
+    src: url('./SFCovingtonSCShadow.ttf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#img{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('./download.jpg');
+    background-size: cover;
+    text-align: right;
+    font-size: xx-large;
+    font-weight: 900;
+    color: aqua;
+    padding: 20%;
+    font-family: new;
+}
+
