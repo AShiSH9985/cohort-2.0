@@ -1,0 +1,53 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-image: url("https://p.turbosquid.com/ts-thumb/xU/IdGrcj/HT/fornet/jpg/1620413258/1920x1080/fit_q87/0054b95c51d041452891505a9b3ad94d4ec523ab/fornet.jpg");
+    text-align: center;
+}
+h2{
+    font-size: 100px;
+    color: rgb(5, 53, 245);
+    padding: 20px;
+    padding-bottom: 0;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card{
+    height: 45%;
+    width: 18%;
+    background: linear-gradient(rgb(127,241,241),white);
+    border-radius: 10%;
+    margin: 1%;
+    overflow: hidden;
+    background-size: cover;
+    box-shadow: 10px 20px 20px blue ;
+}
+img{
+    height: 100%;
+    width: 100%;
+    
+}
+.details{
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(transparent,white,rgb(127, 214, 214));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card:hover .details{
+    transition: ease-in-out .8s;
+    transform: translateY(-100%);
+}
