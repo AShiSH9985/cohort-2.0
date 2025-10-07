@@ -1,0 +1,33 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow: auto;
+    
+    
+}
+.card{
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    border-radius: 10%;
+    flex-shrink: 0;
+}
+
+.main::-webkit-scrollbar {
+  display: none;
+}
+.card:nth-child(2n){
+    background-color: red;
+}
