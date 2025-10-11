@@ -1,0 +1,61 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  gap: 15px;
+}
+#main section:nth-child(1) {
+  height: 100vh;
+  flex-grow: 1;
+  background-image: url("http://assets1.ignimgs.com/2018/04/04/dz9uccqv4aa4efo-1522871891624_1280w.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: all 0.3s ease-in-out;
+}
+#main section:nth-child(2) {
+  height: 100vh;
+  flex-grow: 1;
+  background-image: url("https://applauss.com/wp-content/uploads/2018/04/avengers-infinity-war-doctor-strange.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: all 0.3s ease-in-out;
+}
+#main section:nth-child(3) {
+  height: 100vh;
+  flex-grow: 1;
+  background-image: url("https://i.pinimg.com/originals/f4/eb/c9/f4ebc96fecc3f4e6c7f7683397ec940e.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: all 0.3s ease-in-out;
+}
+#main section:nth-child(4) {
+  height: 100vh;
+  flex-grow: 1;
+  background-image: url("https://i.pinimg.com/736x/25/69/eb/2569eb0d32ee6b2ec9cd2374bafbddd5.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: all 0.3s ease-in-out;
+}
+#main section:nth-child(5) {
+  height: 100vh;
+  flex-grow: 1;
+  background-image: url("http://www.freaksugar.com/wp-content/uploads/2018/04/evans.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: all 0.3s ease-in-out;
+}
+#main section:hover {
+  flex-grow: 2;
+}/*# sourceMappingURL=style.css.map */
