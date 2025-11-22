@@ -33,6 +33,7 @@ button:active{
     color: white;
     height: auto;
     width: auto;
+    font-size: xx-large;
     position:absolute;
     padding: 5px 10px;
     border-radius: 10px;
