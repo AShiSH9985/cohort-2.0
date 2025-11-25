@@ -1,0 +1,29 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    cursor: none;
+    background-color: black;
+    /* position: relative; */
+}
+.cursor{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+}
+.cursor img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+    background: transparent;
+}
