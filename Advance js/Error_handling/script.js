@@ -38,3 +38,44 @@ try {
 }catch (err){
     throw new Error("SOmething went wrong from our side, please wait for some time")
 }
+
+
+
+//  Scenario 1 : Weather dashboard with error handling
+
+//  build a small weather dashboard that fetches current weather data from any public weather api (such as openwethermap).
+//  you must make the api request asynchronously using fetch with async/await.
+
+//  if the api request fails (for example, due to an invalid city name), you must handle the error using try/catch.
+
+// Additionally, create and throw custom errors based on weather conditions.
+// for example:
+// if the temprature is extremely high or extremely low, throw a custom error and handle it properly in your code.
+
+async function getWeather(city){
+    try{
+        let apikey=`b92e57938eaebc6ded1fcf3a2f5b4bc3`
+
+    let data= await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=metric`
+    )
+    
+    if(!data.ok){
+        throw new Error("city name not found")
+    }
+    let realdata=data.json();
+    if(realdata.main.temp<0){
+        console.warn(`to cold out there..... ${realdata.main.temp}C`)
+    }
+    else if(realdata.main.temp > 40){
+        console.warn(`to hot out there..... ${realdata.main.temp}C`)
+    }
+    else{
+        console.log(realdata)
+    }
+    
+    
+    }catch(err){
+        console.log(err.message)
+    }
+}
+getWeather("Mathura")
